@@ -1,0 +1,22 @@
+.login-form {
+  border: solid 1px #666;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 25%;
+  margin: auto;
+}
+
+input,
+button {
+  display: block;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  width: 95%;
+  margin: 0.5rem;
+}
+
+.greeting {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.25rem;
+}

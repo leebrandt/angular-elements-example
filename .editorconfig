@@ -7,6 +7,7 @@ indent_style = space
 indent_size = 2
 insert_final_newline = true
 trim_trailing_whitespace = true
+js_place_field_decorator_on_the_same_line = true
 
 [*.md]
 max_line_length = off
