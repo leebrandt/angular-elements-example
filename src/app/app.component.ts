@@ -24,7 +24,6 @@ export class AppComponent implements OnInit {
   token: any;
 
   ngOnInit() {
-    console.log(this.companyName, this.oktaUrl, this.clientId);
     this.authClient = new OktaAuth({
       url: this.oktaUrl,
       issuer: `${this.oktaUrl}/oauth2/default`,
@@ -58,9 +57,9 @@ export class AppComponent implements OnInit {
           this.username = this.token.claims.email;
         }
       } else {
-        throw `transaction status ${
-          signInResponse.status
-        } could not be handled.`;
+        throw new Error(
+          `transaction status ${signInResponse.status} could not be handled.`
+        );
       }
     } catch (error) {
       console.log(error);
